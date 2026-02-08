@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+  background-color: lightcoral;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: lightcoral;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;  
+  width: 300px;
+  padding: 20px;
+  background: lightpink;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+
+  .yes-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    position: relative;
+  }
+}
+
+.runaway-btn2 {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+

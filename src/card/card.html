@@ -1,14 +1,22 @@
 <body>
+
+<div *ngIf="shownayPicture" class="picture-container"> 
+    <img src="assets/Picture2.png" alt="Valentine Surprise" /> 
+</div>
+
+<div *ngIf="showyayPicture" class="picture-container"> 
+    <img src="assets/Picture3.png" alt="Valentine Surprise" /> 
+</div>
   <div class="card">
+
+    
     <div class="card-header">
-      <h2>Card Title</h2>
+        <h3>Will you be my Valentine… and let me steal your heart tonight? </h3>
     </div>
-    <div class="card-body">
-      <p>This is the body of the card. It contains some text and can be styled as needed.</p>
-    </div>
+    <div class="card-body"> <p>For the details, click <a (click)="onConfirm()">here</a> </p> </div>
     <div class="card-footer">
-      <button class="yes-btn" (click)="launchConfetti()">YES</button>
-      <button class="runaway-btn2" (click)="moveButton($event)" (mouseenter)="moveButton($event)">NO</button>
+      <button class="yes-btn" (click)="launchConfetti()">Accept</button>
+      <button class="runaway-btn2" (click)="moveButton($event)" (mouseenter)="moveButton($event)">Decline</button>
     </div>
   </div>
 </body>
